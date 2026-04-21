@@ -247,11 +247,13 @@ button:hover {
 @media (max-width: 600px) {
 
     .slider {
+        display: flex;
+        overflow: auto;
         scroll-snap-type: x mandatory;
     }
 
     .slider img {
-        height: 180px; /* tamaño celular */
+        flex: 0 0 100%; /* tamaño celular */
         scroll-snap-align: center;
     }
 

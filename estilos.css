@@ -1,0 +1,400 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/736x/4f/77/6e/4f776ec29891259d1a5de63f2722df43.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* efecto parallax 😏 */
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6005C; /* Rosa mexicano */
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 100px;   /* tamaño del logo */
+    height: auto;  /* mantiene proporción */
+}
+
+/* MENÚ */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    margin: 40px auto;
+    width: 90%;
+    padding: 30px;
+    background-color: rgba(255, 182, 193, 0.5); /* Rosa pastel translúcido */
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    height: auto;
+}
+
+/* TÍTULO */
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* PRODUCTOS */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* TARJETAS */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGEN */
+/* 🔥 rompe cualquier conflicto */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* PRECIO */
+.precio {
+    color: #E6005C;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* BOTÓN */
+button {
+    background-color: #E6005C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c4004d;
+}
+
+/* 📱 RESPONSIVE PARA TABLET */
+@media (max-width: 900px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu ul {
+        gap: 10px;
+        font-size: 14px;
+    }
+}
+
+/* 📱 RESPONSIVE PARA CELULAR */
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu li {
+        padding: 8px 0;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+}
+/* FOOTER COMPLETO */
+.footer {
+    width: 100%;
+    background-color: #E6005C;
+    color: white;
+    padding: 25px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centra todo */
+    justify-content: center;
+    text-align: center;
+}
+
+/* TEXTO */
+.footer p {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* CONTENEDOR REDES */
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ICONOS */
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+/* COLORES AL PASAR EL MOUSE */
+.redes a:nth-child(1):hover {
+    color: #1877F2; /* Facebook */
+}
+
+.redes a:nth-child(2):hover {
+    color: #000000; /* TikTok */
+}
+
+.redes a:nth-child(3):hover {
+    color: #25D366; /* WhatsApp */
+}
+/* SLIDER */
+.slider {
+    display: flex !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    flex-wrap: nowrap;
+}
+
+.slider img {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: cover;
+
+    flex: 0 0 100% !important;  /* 🔥 CLAVE */
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.slider {
+    aspect-ratio: 1/1; /* cuadrado perfecto */
+}
+.slider {
+    scroll-behavior: smooth;
+
+}
+
+/* CONTENEDOR */
+.slider-container {
+    position: relative;
+}
+
+/* BOTONES */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* PUNTOS */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 6px;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots .active {
+    background: #E6005C;
+}
+
+.precios p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.precios span {
+    font-weight: bold;
+    color: #E6005C;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.8);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* BOTON CERRAR */
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* FLECHAS MODAL */
+.prev-modal, .next-modal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.prev-modal { left: 20px; }
+.next-modal { right: 20px; }
+
+.buscador-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* ICONO */
+.buscador-box i {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* INPUT OCULTO */
+.buscador-box input {
+    width: 0;
+    opacity: 0;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    pointer-events: none;
+
+    position: absolute;
+    right: 0;
+    transition: 0.4s;
+}
+
+/* 🔥 CUANDO SE ACTIVA */
+.buscador-box.active input {
+    width: 180px;
+    opacity: 1;
+    padding-left: 35px;
+    pointer-events: auto;
+}
+
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombrillas - Artículos Alondra</title>
+    <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.jpeg">
+    </div>
+
+    <nav class="menu">
+        <ul>
+
+            <!-- 🔍 BUSCADOR -->
+            <li class="buscador-li">
+                <div class="buscador-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="buscador" placeholder="Buscar..." onkeyup="filtrarProductos()">
+                </div>
+            </li>
+
+            <li><a href="ADTA.html">Inicio</a></li>
+            <li><a href="Bolsas.html">Bolsas</a></li>
+            <li><a href="Mochilas.html">Mochilas</a></li>
+            <li><a href="Maletas.html">Maletas</a></li>
+            <li><a href="Flores.html">Flores</a></li>
+            <li><a href="#">Carpas</a></li>
+            <li><a href="Sombrillas.html">Sombrillas</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+<h1>Sombrillas</h1>
+
+<div class="productos">
+
+<!-- CARD 1 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/1.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/1_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Infantil</h3>
+<p class="descripcion">Diseño con orejitas, ligera y divertida.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $69</p>
+<p><span>Mayoreo:</span> $60</p>
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/2.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/2_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Clásica</h3>
+<p class="descripcion">Resistente al sol y lluvia.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $85</p>
+<p><span>Mayoreo:</span> $75</p>
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/3.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/3_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Automática</h3>
+<p class="descripcion">Apertura rápida con botón.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $120</p>
+<p><span>Mayoreo:</span> $100</p>
+</div>
+</div>
+
+<!-- CARD 4 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/4.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/4_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Transparente</h3>
+<p class="descripcion">Diseño moderno y elegante.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $110</p>
+<p><span>Mayoreo:</span> $95</p>
+</div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/5.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/5_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Colores</h3>
+<p class="descripcion">Diseño llamativo y juvenil.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $95</p>
+<p><span>Mayoreo:</span> $80</p>
+</div>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/6.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/6_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Compacta</h3>
+<p class="descripcion">Fácil de guardar y transportar.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $70</p>
+<p><span>Mayoreo:</span> $60</p>
+</div>
+</div>
+
+<!-- CARD 7 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/7.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/7_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Premium</h3>
+<p class="descripcion">Alta resistencia y durabilidad.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $140</p>
+<p><span>Mayoreo:</span> $120</p>
+</div>
+</div>
+
+<!-- CARD 8 -->
+<div class="card">
+<div class="slider">
+<img src="Sombrillas/8.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Sombrillas/8_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Sombrilla Grande</h3>
+<p class="descripcion">Cobertura amplia para lluvia intensa.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $130</p>
+<p><span>Mayoreo:</span> $110</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+<span class="cerrar" onclick="cerrarImagen()">&times;</span>
+<button class="prev-modal">&#10094;</button>
+<img id="imgGrande">
+<button class="next-modal">&#10095;</button>
+</div>
+
+<script>
+let imagenes = [];
+let indexActual = 0;
+
+function abrirImagen(src, e) {
+    const slider = e.target.parentElement;
+    imagenes = Array.from(slider.querySelectorAll("img"));
+
+    indexActual = imagenes.findIndex(img => img.src === e.target.src);
+
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("imgGrande").src = src;
+}
+
+function cerrarImagen() {
+    document.getElementById("modal").style.display = "none";
+}
+
+document.querySelector(".next-modal").onclick = () => {
+    indexActual = (indexActual + 1) % imagenes.length;
+    document.getElementById("imgGrande").src = imagenes[indexActual].src;
+};
+
+document.querySelector(".prev-modal").onclick = () => {
+    indexActual = (indexActual - 1 + imagenes.length) % imagenes.length;
+    document.getElementById("imgGrande").src = imagenes[indexActual].src;
+};
+</script>
+
+<script>
+function filtrarProductos() {
+    const input = document.getElementById("buscador").value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        const titulo = card.querySelector("h3").textContent.toLowerCase();
+        const descripcion = card.querySelector(".descripcion").textContent.toLowerCase();
+
+        if (titulo.includes(input) || descripcion.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+<script>
+const buscadorBox = document.querySelector(".buscador-box");
+const input = buscadorBox.querySelector("input");
+const icono = buscadorBox.querySelector("i");
+
+icono.addEventListener("click", () => {
+    buscadorBox.classList.toggle("active");
+    input.focus();
+});
+</script>
+
+</body>
+</html>

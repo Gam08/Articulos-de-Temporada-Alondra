@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpas - Artículos Alondra</title>
+    <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.jpeg">
+    </div>
+
+    <nav class="menu">
+        <ul>
+
+            <!-- 🔍 BUSCADOR -->
+            <li class="buscador-li">
+                <div class="buscador-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="buscador" placeholder="Buscar..." onkeyup="filtrarProductos()">
+                </div>
+            </li>
+
+            <li><a href="ADTA.html">Inicio</a></li>
+            <li><a href="Bolsas.html">Bolsas</a></li>
+            <li><a href="Mochilas.html">Mochilas</a></li>
+            <li><a href="Maletas.html">Maletas</a></li>
+            <li><a href="Flores.html">Flores</a></li>
+            <li><a href="Carpas.html">Carpas</a></li>
+            <li><a href="Sombrillas.html">Sombrillas</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+<h1>Carpas</h1>
+
+<div class="productos">
+
+<!-- CARD 1 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/1.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/1_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa 2x2</h3>
+<p class="descripcion">Compacta, ideal para espacios pequeños.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1150</p>
+<p><span>Mayoreo:</span> $1100</p>
+<p><span>Caja:</span> $950</p>
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/2.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/2_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa 2x3</h3>
+<p class="descripcion">Ideal para negocios y eventos.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1450</p>
+<p><span>Mayoreo:</span> $1350</p>
+<p><span>Caja:</span> $1300</p>
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/3.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/3_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa 3x3</h3>
+<p class="descripcion">La más vendida, resistente al sol y lluvia.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1300</p>
+<p><span>Mayoreo:</span> $1200</p>
+<p><span>Caja:</span> $1150</p>
+</div>
+</div>
+
+<!-- CARD 4 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/4.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/4_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa Plegable</h3>
+<p class="descripcion">Fácil de transportar y armar.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1250</p>
+<p><span>Mayoreo:</span> $1150</p>
+</div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/5.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/5_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa Reforzada</h3>
+<p class="descripcion">Estructura resistente para uso continuo.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1600</p>
+<p><span>Mayoreo:</span> $1500</p>
+</div>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/6.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/6_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa Blanca</h3>
+<p class="descripcion">Ideal para eventos formales.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1400</p>
+<p><span>Mayoreo:</span> $1300</p>
+</div>
+</div>
+
+<!-- CARD 7 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/7.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/7_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa Evento</h3>
+<p class="descripcion">Perfecta para fiestas y reuniones.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1700</p>
+<p><span>Mayoreo:</span> $1600</p>
+</div>
+</div>
+
+<!-- CARD 8 -->
+<div class="card">
+<div class="slider">
+<img src="Carpas/8.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Carpas/8_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Carpa Premium</h3>
+<p class="descripcion">Alta calidad y máxima resistencia.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1900</p>
+<p><span>Mayoreo:</span> $1800</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+<span class="cerrar" onclick="cerrarImagen()">&times;</span>
+<button class="prev-modal">&#10094;</button>
+<img id="imgGrande">
+<button class="next-modal">&#10095;</button>
+</div>
+
+<script>
+let imagenes = [];
+let indexActual = 0;
+
+function abrirImagen(src, e) {
+    const slider = e.target.parentElement;
+    imagenes = Array.from(slider.querySelectorAll("img"));
+
+    indexActual = imagenes.findIndex(img => img.src === e.target.src);
+
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("imgGrande").src = src;
+}
+
+function cerrarImagen() {
+    document.getElementById("modal").style.display = "none";
+}
+
+document.querySelector(".next-modal").onclick = () => {
+    indexActual = (indexActual + 1) % imagenes.length;
+    document.getElementById("imgGrande").src = imagenes[indexActual].src;
+};
+
+document.querySelector(".prev-modal").onclick = () => {
+    indexActual = (indexActual - 1 + imagenes.length) % imagenes.length;
+    document.getElementById("imgGrande").src = imagenes[indexActual].src;
+};
+</script>
+
+<script>
+function filtrarProductos() {
+    const input = document.getElementById("buscador").value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        const titulo = card.querySelector("h3").textContent.toLowerCase();
+        const descripcion = card.querySelector(".descripcion").textContent.toLowerCase();
+
+        if (titulo.includes(input) || descripcion.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+<script>
+const buscadorBox = document.querySelector(".buscador-box");
+const input = buscadorBox.querySelector("input");
+const icono = buscadorBox.querySelector("i");
+
+icono.addEventListener("click", () => {
+    buscadorBox.classList.toggle("active");
+    input.focus();
+});
+</script>
+
+</body>
+</html>

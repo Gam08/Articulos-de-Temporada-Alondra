@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maletas - Artículos Alondra</title>
+    <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.jpeg">
+    </div>
+
+    <nav class="menu">
+        <ul>
+
+            <!-- 🔍 BUSCADOR -->
+            <li class="buscador-li">
+                <div class="buscador-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="buscador" placeholder="Buscar..." onkeyup="filtrarProductos()">
+                </div>
+            </li>
+
+            <li><a href="ADTA.html">Inicio</a></li>
+            <li><a href="Bolsas.html">Bolsas</a></li>
+            <li><a href="Mochilas.html">Mochilas</a></li>
+            <li><a href="Maletas.html">Maletas</a></li>
+            <li><a href="Flores.html">Flores</a></li>
+            <li><a href="Carpas.html">Carpas</a></li>
+            <li><a href="Sombrillas.html">Sombrillas</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+<h1>Maletas</h1>
+
+<div class="productos">
+
+<!-- CARD 1 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/Maleta _1.jpeg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/Maleta_9.jpeg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Juego de Maletas</h3>
+<p class="descripcion">Material policarbonato, 3 piezas.</p>
+<div class="precios">
+<p><span>Juego:</span> $1426</p>
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/2.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/2_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Maleta Mediana</h3>
+<p class="descripcion">Ideal para viajes de varios días.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $950</p>
+<p><span>Mayoreo:</span> $900</p>
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/3.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/3_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Maleta Grande</h3>
+<p class="descripcion">Amplia y resistente.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1200</p>
+<p><span>Mayoreo:</span> $1100</p>
+</div>
+</div>
+
+<!-- CARD 4 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/4.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/4_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Set de Maletas</h3>
+<p class="descripcion">Juego de 3 piezas, excelente calidad.</p>
+<div class="precios">
+<p><span>Precio:</span> $1800</p>
+</div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/5.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/5_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Maleta Rígida</h3>
+<p class="descripcion">Policarbonato resistente.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1100</p>
+<p><span>Mayoreo:</span> $1000</p>
+</div>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/6.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/6_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Maleta Expandible</h3>
+<p class="descripcion">Mayor espacio cuando lo necesitas.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1050</p>
+<p><span>Mayoreo:</span> $980</p>
+</div>
+</div>
+
+<!-- CARD 7 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/7.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/7_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Maleta Premium</h3>
+<p class="descripcion">Diseño elegante y moderno.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $1350</p>
+<p><span>Mayoreo:</span> $1250</p>
+</div>
+</div>
+
+<!-- CARD 8 -->
+<div class="card">
+<div class="slider">
+<img src="Maletas/8.jpg" onclick="abrirImagen(this.src, event)">
+<img src="Maletas/8_2.jpg" onclick="abrirImagen(this.src, event)">
+</div>
+<h3>Maleta Económica</h3>
+<p class="descripcion">Buena calidad a excelente precio.</p>
+<div class="precios">
+<p><span>Menudeo:</span> $650</p>
+<p><span>Mayoreo:</span> $600</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+<span class="cerrar" onclick="cerrarImagen()">&times;</span>
+<button class="prev-modal">&#10094;</button>
+<img id="imgGrande">
+<button class="next-modal">&#10095;</button>
+</div>
+
+<script>
+let imagenes = [];
+let indexActual = 0;
+
+function abrirImagen(src, e) {
+    const slider = e.target.parentElement;
+    imagenes = Array.from(slider.querySelectorAll("img"));
+
+    indexActual = imagenes.findIndex(img => img.src === e.target.src);
+
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("imgGrande").src = src;
+}
+
+function cerrarImagen() {
+    document.getElementById("modal").style.display = "none";
+}
+
+document.querySelector(".next-modal").onclick = () => {
+    indexActual = (indexActual + 1) % imagenes.length;
+    document.getElementById("imgGrande").src = imagenes[indexActual].src;
+};
+
+document.querySelector(".prev-modal").onclick = () => {
+    indexActual = (indexActual - 1 + imagenes.length) % imagenes.length;
+    document.getElementById("imgGrande").src = imagenes[indexActual].src;
+};
+</script>
+
+<script>
+function filtrarProductos() {
+    const input = document.getElementById("buscador").value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        const titulo = card.querySelector("h3").textContent.toLowerCase();
+        const descripcion = card.querySelector(".descripcion").textContent.toLowerCase();
+
+        if (titulo.includes(input) || descripcion.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+<script>
+const buscadorBox = document.querySelector(".buscador-box");
+const input = buscadorBox.querySelector("input");
+const icono = buscadorBox.querySelector("i");
+
+icono.addEventListener("click", () => {
+    buscadorBox.classList.toggle("active");
+    input.focus();
+});
+</script>
+
+</body>
+</html>

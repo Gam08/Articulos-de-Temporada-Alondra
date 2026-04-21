@@ -140,6 +140,10 @@ button:hover {
         padding: 5px;
     }
 
+    .productos {
+        grid-template-columns: 1fr; /* 🔥 UNA SOLA COLUMNA */
+    }
+
 }
 /* FOOTER COMPLETO */
 .footer {
@@ -209,10 +213,12 @@ button:hover {
 
 .slider img {
     width: 100% !important;
-    height: 400px !important;
     object-fit: cover;
 
     flex: 0 0 100% !important;  /* 🔥 CLAVE */
+    height: 250px;   /* 🔥 tamaño ideal */
+    object-fit: cover; /* 🔥 evita deformación */
+    border-radius: 10px;
 }
 
 .slider::-webkit-scrollbar {

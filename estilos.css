@@ -218,41 +218,42 @@ button:hover {
 }
 /* SLIDER */
 /* SLIDER */
-@media (max-width: 600px) {
-
-    .slider {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-
-    .slider img {
-        flex: 0 0 100%;
-        scroll-snap-align: center;
-    }
-
-}
-
-/* IMÁGENES */
+/* SLIDER GENERAL (LAPTOP + TODO) */
 .slider {
     display: flex;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.slider:active {
+    cursor: grabbing;
 }
 
 .slider img {
     width: 100%;
-    height: 450px;
+    height: 450px; /* laptop grande 🔥 */
     object-fit: cover;
     flex: 0 0 100%;
     border-radius: 10px;
-
 }
 
+/* OCULTA SCROLL */
 .slider::-webkit-scrollbar {
     display: none;
 }
-.slider {
-    scroll-behavior: smooth;
+
+/* 📱 CELULAR */
+@media (max-width: 600px) {
+
+    .slider {
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider img {
+        height: 180px; /* tamaño celular */
+        scroll-snap-align: center;
+    }
 
 }
 

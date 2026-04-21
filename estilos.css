@@ -143,6 +143,13 @@ button:hover {
     .productos {
         grid-template-columns: 1fr; /* 🔥 UNA SOLA COLUMNA */
     }
+        .slider img {
+        height: 180px;  /* 🔥 más compacto en celular */
+    }
+
+    .card {
+        padding: 10px;
+    }
 
 }
 /* FOOTER COMPLETO */
@@ -213,19 +220,13 @@ button:hover {
 
 .slider img {
     width: 100% !important;
+    height: 200px;   /* 🔥 tamaño fijo bonito */
     object-fit: cover;
-
-    flex: 0 0 100% !important;  /* 🔥 CLAVE */
-    height: 250px;   /* 🔥 tamaño ideal */
-    object-fit: cover; /* 🔥 evita deformación */
     border-radius: 10px;
 }
 
 .slider::-webkit-scrollbar {
     display: none;
-}
-.slider {
-    aspect-ratio: 1/1; /* cuadrado perfecto */
 }
 .slider {
     scroll-behavior: smooth;

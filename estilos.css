@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("des.jpg");
+    background-image: url("mama.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* efecto parallax 😏 */
@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("marco.jpg"); /* 🔥 */
+    background-image: url("mar.png"); /* 🔥 */
     background-size: cover; /* ajusta la imagen */
     background-position: center; /* centra */
     background-repeat: no-repeat; /* evita repetición */

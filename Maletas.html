@@ -13,22 +13,17 @@
 
 <body>
 
-<header class="header">
+
+   <header class="header">
+
     <div class="logo">
-        <img src="logo.jpeg">
+        <img src="logo.jpeg" alt="Logo">
     </div>
 
-    <nav class="menu">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
         <ul>
-
-            <!-- 🔍 BUSCADOR -->
-            <li class="buscador-li">
-                <div class="buscador-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="buscador" placeholder="Buscar..." onkeyup="filtrarProductos()">
-                </div>
-            </li>
-
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Bolsas.html">Bolsas</a></li>
             <li><a href="Mochilas.html">Mochilas</a></li>
@@ -36,9 +31,11 @@
             <li><a href="Flores.html">Flores</a></li>
             <li><a href="Carpas.html">Carpas</a></li>
             <li><a href="Sombrillas.html">Sombrillas</a></li>
-
+            <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
+
+
 </header>
 
 <main class="container">
@@ -236,6 +233,10 @@ icono.addEventListener("click", () => {
     input.focus();
 });
 </script>
-
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
 </body>
 </html>

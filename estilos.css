@@ -181,17 +181,18 @@ button:hover {
     .menu li {
         padding: 5px;
     }
-
-.slider {
-    height: 220px;
-    background: white;
+    .slider {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;      
+    }
 .slider img {
-    max-width: 100%;
+    flex: 0 0 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+
     max-height: 100%;
     object-fit: contain;
 }

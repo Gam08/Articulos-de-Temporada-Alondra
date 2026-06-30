@@ -183,7 +183,11 @@ button:hover {
     }
 
 .slider img {
-    height: 120px;
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* cuadrada */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
     .card {

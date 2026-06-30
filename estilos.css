@@ -164,14 +164,16 @@ button:hover {
 
 /* 📱 RESPONSIVE PARA CELULAR */
 @media (max-width: 600px) {
+
     .productos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-}
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
 
     .menu ul {
-        flex-direction: row;   /* 🔥 antes estaba en column */
-        flex-wrap: wrap;       /* para que bajen si no caben */
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
@@ -179,24 +181,26 @@ button:hover {
     .menu li {
         padding: 5px;
     }
-   .slider img {
-    height: 140px;
-}
 
-.card {
-    padding: 8px;
-}
+    .slider img {
+        height: 140px;
+    }
 
-.card h3 {
-    font-size: 15px;
-}
+    .card {
+        padding: 8px;
+    }
 
-.descripcion {
-    font-size: 12px;
-}
+    .card h3 {
+        font-size: 15px;
+    }
 
-.precios p {
-    font-size: 12px;
+    .descripcion {
+        font-size: 12px;
+    }
+
+    .precios p {
+        font-size: 12px;
+    }
 }
 
 }

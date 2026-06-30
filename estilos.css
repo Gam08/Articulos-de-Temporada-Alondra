@@ -181,21 +181,7 @@ button:hover {
     .menu li {
         padding: 5px;
     }
-    .slider {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;      
-    }
-.slider img {
-    flex: 0 0 100%;
-    min-width: 100%;
-    scroll-snap-align: start;
 
-    max-height: 100%;
-    object-fit: contain;
-}
 
     .card {
         padding: 6px;
@@ -279,14 +265,35 @@ button:hover {
     color: #25D366; /* WhatsApp */
 }
 
-/* SLIDER GENERAL (LAPTOP + TODO) */
-.slider {
+/* ===== SLIDER ===== */
 
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    cursor: grab;
-    
+.slider{
+    display:flex;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+    cursor:grab;
+}
+
+.slider:active{
+    cursor:grabbing;
+}
+
+.slider img{
+    flex:0 0 100%;
+    min-width:100%;
+    scroll-snap-align:start;
+
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:contain;
+    background:white;
+    border-radius:10px;
+}
+
+.slider::-webkit-scrollbar{
+    display:none;
 }
 
 

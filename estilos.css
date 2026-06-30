@@ -267,13 +267,16 @@ button:hover {
 
 /* ===== SLIDER ===== */
 
-.slider{
-    display:flex;
-    overflow-x:auto;
-    overflow-y:hidden;
-    scroll-behavior:smooth;
-    scroll-snap-type:x mandatory;
-    cursor:grab;
+.slider {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* 🔥 cuadrado */
+    border-radius: 10px;
 }
 
 .slider:active{
@@ -281,15 +284,15 @@ button:hover {
 }
 
 .slider img{
-    flex:0 0 100%;
-    min-width:100%;
-    scroll-snap-align:start;
+    flex: 0 0 100%;
+    min-width: 100%;
 
-    width:100%;
-    aspect-ratio:1/1;
-    object-fit:contain;
-    background:white;
-    border-radius:10px;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;   /* muestra toda la bolsa */
+    background: white;
+    scroll-snap-align: start;
 }
 
 .slider::-webkit-scrollbar{
@@ -330,13 +333,7 @@ button:hover {
     cursor: grabbing;
 }
 
-.slider img {
-    width: 100%;
-    height: 450px; /* laptop grande 🔥 */
-    object-fit: cover;
-    flex: 0 0 100%;
-    border-radius: 10px;
-}
+
 
 /* OCULTA SCROLL */
 .slider::-webkit-scrollbar {

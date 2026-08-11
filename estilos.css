@@ -267,6 +267,8 @@ button:hover {
 
 /* ===== SLIDER ===== */
 
+/* ===== SLIDER ===== */
+
 .slider {
     display: flex;
     overflow-x: auto;
@@ -275,30 +277,41 @@ button:hover {
     scroll-snap-type: x mandatory;
 
     width: 100%;
-    aspect-ratio: 1 / 1;   /* 🔥 cuadrado */
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
+
+    cursor: grab;
 }
 
-.slider:active{
-    cursor:grabbing;
+.slider:active {
+    cursor: grabbing;
 }
 
-.slider img{
+/* IMÁGENES DEL SLIDER */
+.slider img {
     flex: 0 0 100%;
     min-width: 100%;
 
     width: 100%;
     height: 100%;
 
-    object-fit: contain;   /* muestra toda la bolsa */
+    object-fit: contain;
     background: white;
+
+    border-radius: 10px;
     scroll-snap-align: start;
 }
 
-.slider::-webkit-scrollbar{
-    display:none;
+/* OCULTAR BARRA DE DESPLAZAMIENTO */
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
+/* ===== INDICACIÓN "DESLIZA" ===== */
+
+.slider-container {
+    position: relative;
+}
 
 .slider-container::after {
     content: "⇆ Desliza";
@@ -306,44 +319,32 @@ button:hover {
     bottom: 10px;
     right: 10px;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 12px;
+
     padding: 4px 8px;
     border-radius: 10px;
 
     pointer-events: none;
 }
+
+/* ===== INDICACIÓN "TOCA PARA VER" ===== */
+
 .slider-container::before {
     content: "👆 Toca para ver";
     position: absolute;
     top: 10px;
     left: 10px;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 12px;
+
     padding: 4px 8px;
     border-radius: 10px;
 
     pointer-events: none;
-}
-
-.slider:active {
-    cursor: grabbing;
-}
-
-.slider img {
-    width: 100%;
-    height: 450px; /* laptop grande 🔥 */
-    object-fit: cover;
-    flex: 0 0 100%;
-    border-radius: 10px;
-}
-
-/* OCULTA SCROLL */
-.slider::-webkit-scrollbar {
-    display: none;
 }
 
 
